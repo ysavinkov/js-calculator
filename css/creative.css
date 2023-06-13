@@ -1,0 +1,28 @@
+.hidden {
+    width: 310px;
+    height: 390px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transform-style: preserve-3d;
+    transform: translateZ(10px);
+}
+
+.hidden button {
+    width: 60px;
+    height: 60px;
+    margin: 8px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(91, 74, 194, 0.34);
+    font-family: 'DM Mono', monospace;
+    font-size: 30px;
+    align-items: center;
+    text-align: center;
+    color: #333333;
+    transform-style: preserve-3d;
+    transform: translateZ(10px);
+}

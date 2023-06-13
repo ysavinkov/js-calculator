@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&family=Montserrat:wght@400;700&display=swap');
+
+body {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*background: url("https://images.pexels.com/photos/7130555/pexels-photo-7130555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");*/
+    background: #afffaf;
+    background-size: cover;
+}
+
+h1 {
+    font-family: 'DM Mono', monospace;
+    font-size: 100px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.calculator {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    width: 350px;
+    height: 625px;
+    background: rgba(91, 74, 194, 1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+    border-radius: 30px;
+    perspective: 1000px;
+}
+
+.output {
+    width: 310px;
+    height: 160px;
+    margin: 25px auto;
+    background: #FFFFFF;
+    font-family: 'DM Mono', monospace;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    border-radius: 20px 20px 0 0;
+    transform-style: preserve-3d;
+    transform: translateZ(10px);
+}
+
+#result {
+    font-size: 64px;
+    font-weight: bold;
+    color: #333333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+}
+
+#result.small {
+    font-size: 20px;
+}
+
+.buttons {
+    width: 310px;
+    height: 390px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transform-style: preserve-3d;
+    transform: translateZ(10px);
+}
+
+.buttons button {
+    width: 60px;
+    height: 60px;
+    margin: 8px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(91, 74, 194, 0.34);
+    font-family: 'DM Mono', monospace;
+    font-size: 30px;
+    align-items: center;
+    text-align: center;
+    color: #333333;
+    transform-style: preserve-3d;
+    transform: translateZ(10px);
+}
+
+#equal,
+#arrow {
+    background: #5B4AC2;
+    color: #FFFFFF;
+}
+
+.hidden button:hover,
+.buttons button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: translateZ(15px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#history {
+    font-size: 20px;
+    color: #888888;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    transform: translateZ(10px);
+    align-self: flex-end;
+}

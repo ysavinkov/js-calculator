@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" type="text/css" href="css/calc.css">
+    <link rel="stylesheet" type="text/css" href="css/creative.css">
+</head>
+<body>
+<div class="calculator">
+    <div class="output">
+        <div id="history"></div>
+        <div id="result">0</div>
+    </div>
+    <div class="buttons">
+        <button class="reset" onclick="resetResult()">C</button>
+        <button onclick="toggleSign()">+/-</button>
+        <button onclick="calculatePercentage()">%</button>
+        <button class="operator" onclick="appendOperator('/')">/</button>
+        <button onclick="appendNumber(7)">7</button>
+        <button onclick="appendNumber(8)">8</button>
+        <button onclick="appendNumber(9)">9</button>
+        <button class="operator" onclick="appendOperator('*')">*</button>
+        <button onclick="appendNumber(4)">4</button>
+        <button onclick="appendNumber(5)">5</button>
+        <button onclick="appendNumber(6)">6</button>
+        <button class="operator" onclick="appendOperator('-')">-</button>
+        <button onclick="appendNumber(1)">1</button>
+        <button onclick="appendNumber(2)">2</button>
+        <button onclick="appendNumber(3)">3</button>
+        <button class="operator" onclick="appendOperator('+')">+</button>
+        <button onclick="appendDecimalPoint()">.</button>
+        <button onclick="appendNumber(0)">0</button>
+        <button id="equal" class="operator" onclick="calculateResult()">=</button>
+        <button id="arrow" class="operator" onclick="toggleButtons()">&rarr;</button>
+    </div>
+    <div id="additionalButtons" class="hidden" style="display: none;">
+
+        <button onclick="clearMemory()">MC</button>
+        <button onclick="recallMemory()">MR</button>
+        <button onclick="addToMemory()">M+</button>
+        <button onclick="subtractFromMemory()">M-</button>
+
+        <button onclick="calculateFactorial()">n!</button>
+        <button onclick="appendOperator('^')">^</button>
+        <button onclick="calculateSqrt()">√</button>
+        <button onclick="viewMemory()">Mv</button>
+
+        <button onclick="toCM()">cm</button>
+        <button onclick="toM('m')">m</button>
+        <button onclick="toKM()">km</button>
+        <button onclick="toG('g')">g</button>
+        
+        <button onclick="toCM2('cm2')">cm2</button>
+        <button onclick="toM2('m2')">m2</button>
+        <button onclick="toKM2('km2')">km2</button>
+        <button onclick="toKG('kg')">kg</button>
+
+        <button onclick="fromDecimalToBinary()">bin</button>
+        <button onclick="convertToDecimal()">dec</button>
+        <button onclick="fromDecimalToHex()">hex</button>
+        <button id="arrow" class="operator" onclick="toggleButtons()">&larr;</button>
+
+    </div>
+    <div id="additionalButtonsSecond" class="hidden" style="display: none;">
+
+        <button class="operator" onclick="toggleButtons()">&larr;</button>
+        <button onclick="appendOperator('dec')">dec</button>
+        <button onclick="appendOperator('hex')">hex</button>
+        <button class="operator" onclick="toggleButtons()">&rarr;</button>
+
+    </div>
+</div>
+
+<script src="js/basic.js"></script>
+<script src="js/creative.js"></script>
+</body>
+</html>
